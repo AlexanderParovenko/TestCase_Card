@@ -1,0 +1,21 @@
+<app-card>
+    <ng-container header> Yesterday's snapshot </ng-container>
+
+    <ng-container body>
+        <div class="body__column">
+            <div class="body__chart">
+                <app-expenses-chart [chartData]="chartData"></app-expenses-chart>
+
+            </div>
+            <div class="body__bars">
+                <app-doctor-expenses-bar *ngFor="let doctorExpenses of dataSample.doctorsExpenses"
+                    [doctorExpenses]="doctorExpenses">
+                </app-doctor-expenses-bar>
+            </div>
+        </div>
+        <div class="tile-container">
+            <app-statistic-tile *ngFor="let data of tilesData" [tileData]="data"></app-statistic-tile>
+        </div>
+    </ng-container>
+
+</app-card>

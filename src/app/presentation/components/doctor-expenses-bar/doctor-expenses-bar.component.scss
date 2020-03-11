@@ -1,0 +1,50 @@
+.expences {
+    display: flex;
+    justify-content: space-between;
+
+    .expences__bar {
+        
+        width: 100%;
+        background-color: #ECEBEA;
+        border-radius: 16px;
+        height: 1rem;
+
+        .expences__slide {
+            color: #fff;
+            height: 1rem;
+            border-radius: 16px;
+            padding: 0.01em 16px;
+
+            &.green {
+                background-color: #4FC67A;
+            }
+
+            &.orange {
+                background-color: #F5B42B;
+            }
+        }
+    }
+
+    .expences__progress {
+        width: 85%;
+    }
+
+    .expences__percent {
+        width: 10%;
+        color: #878787;
+        text-align: center;
+    }
+
+
+}
+
+.info {
+    margin-bottom: 0.5rem;
+
+    .info__specialty {
+        font-weight: bold;
+        margin-right: 1rem;
+    }
+
+    .expences__percent {}
+}

@@ -120,6 +120,12 @@
           }
         }
       }
-    }},
-  "defaultProject": "TestCard"
+    }
+  },
+  "defaultProject": "TestCard",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }

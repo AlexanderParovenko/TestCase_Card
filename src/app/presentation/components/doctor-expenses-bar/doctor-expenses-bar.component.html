@@ -1,0 +1,16 @@
+<div class="info">
+    <span class="info__specialty">{{doctorExpenses.specialty}}:</span>
+    <span class="info__expenses">${{doctorExpenses.expenses}} of ${{doctorExpenses.budget}}</span>
+</div>
+<div class="expences">
+    <div class="expences__progress">
+        <div class="expences__bar">
+            <div class="expences__slide {{getExpensesPercentage() > 50 ? 'green': 'orange'}}"
+                [style.width]="getBarWidth()">
+            </div>
+        </div>
+    </div>
+    <div class="expences__percent">
+        {{getExpensesPercentage().toFixed(0)}}%
+    </div>
+</div>
